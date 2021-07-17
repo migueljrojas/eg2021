@@ -1,22 +1,123 @@
 .nota {
+  max-width: 80%;
+  margin: 2rem auto;
+
   &__heading {
+    max-width: 90%;
+
     &-category {
-      background-color: red;
-      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $mainColor;
+      font-family: $altFont;
+      text-transform: uppercase;
+      color: $white;
+      padding: .25rem .5rem;
     }
+
+    &-subtitle {
+      color: $midGray;
+      font-weight: 500;
+      line-height: 1.2rem;
+      font-size: $xs;
+    }
+
     &-author {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-    
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      margin: 1rem 0;
+
       p {
         margin: 0;
+        font-size: $xs;
+        font-weight: 500;
+        text-decoration: underline $midGray;
+      }
 
-        strong {
-          font-weight: 600;
-          margin-right: .5rem;
+      span {
+        font-size: $xxs;
+        color: $midGray;
+        &::before {
+          content: '•';
+          margin-right: .25rem;
         }
       }
     }
+    
+    &-hr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 40%;
+      gap: .2rem;
+
+      &--1 {
+        width: 90%;
+        background-color: $mainColor;
+        height: 3px;
+        border-color: transparent;
+        margin: 0;
+      }
+
+      &--2 {
+        width: 10%;
+        background-color: $egYellow;
+        height: 3px;
+        border-color: transparent;
+        margin: 0;
+      }
+    }
   }
+
+  &__main {
+    &-legend {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+
+      p {
+        margin: 0;
+        font-size: $xs;
+        font-weight: 500;
+      }
+
+      span {
+        font-size: $xs;
+      }
+    }
+
+    &-widget {
+      height: fit-content;
+    }
+
+    &-side {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+
+    &-text {
+      p {
+        font-size: $sm;
+        margin: 0 0 1rem 0;
+      }
+
+      img {
+        margin: 1.5rem 0;
+      }
+    }
+
+    img {
+      height: auto;
+    }
+  }
+}
+
+._icon {
+  width: fit-content;
+  height: fit-content;
 }
