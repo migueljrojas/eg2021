@@ -1,6 +1,46 @@
 [
-    {
-        "name":"",
-        "url":""
-    }
+  {
+    "name": "Menu de contenidos",
+    "links": [
+      "FÚTBOL ARGENTINO",
+      "LA JORNADA ESTÁ AQUÍ",
+      "CONMEBOL LIBERTADORES",
+      "MEMORIA EMOTIVA",
+      "¡HABLA MEMORIA",
+      "HEMEROTECA",
+      "MARADONA Y EL GRÁFICO",
+      "JUEGOS OLÍMPICOS"
+    ]
+  },
+  {
+    "name": "Fotos",
+    "links": [
+      "HEMEROTECA",
+      "LAS FOTOS DE EL GRÁFICO",
+      "LA TAPA"
+    ]
+  },
+  {
+    "name": "Videos",
+    "links": [
+      "MEMORIA EMOTIVA",
+      "LA JORNADA ESTÁ AQUÍ",
+      "FÚTBOL ARGENTINO"
+    ]
+  },
+  {
+    "name": "NUESTRA HISTORIA",
+    "links": [
+      "NAVEGADOR DE TAPAS",
+      "100 años de El Gráfico"
+    ]
+  },
+  {
+    "name": "SERVICIOS",
+    "links": [
+      "VENTA DE FOTOS",
+      "PREGUNTAS FRECUENTES",
+      "CONTACTO"
+    ]
+  }
 ]
