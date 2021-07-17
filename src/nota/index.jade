@@ -1,0 +1,29 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../';
+  
+block content
+  main.nota
+    .eg-grid
+      div.eg-cell__1-3.eg-grid__content
+        .nota__heading 
+          span.nota__heading-category Category
+          h1.nota__heading-title Title
+          p.nota__heading-subtitle Subtitle
+          .nota__heading-author
+            img(src="/", alt="")._icon
+            p 
+              strong Author
+              span Date
+
+
+
+
+
+
+
+      div.eg-cell__4-1.eg-row__1-6.eg-grid__side
+        img.eg-cell__1.eg-row__1-1(src="https://via.placeholder.com/300x600?text=300x600+Half+Page+Ad", alt="")
+        img.eg-cell__1.eg-row__2-1(src="https://via.placeholder.com/300x500?text=300x500+Half+Page+Ad", alt="")
+        img.eg-cell__1.eg-row__3-1(src="https://via.placeholder.com/300x250?text=300x250+MPU", alt="")

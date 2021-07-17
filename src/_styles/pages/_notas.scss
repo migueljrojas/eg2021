@@ -1,0 +1,22 @@
+.nota {
+  &__heading {
+    &-category {
+      background-color: red;
+      color: white;
+    }
+    &-author {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    
+      p {
+        margin: 0;
+
+        strong {
+          font-weight: 600;
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
