@@ -1,16 +1,33 @@
 .home {
   max-width: 80%;
   margin: 2rem auto;
-  
+
   &__section {
+    &-alt {
+      font-weight: 400;
+      font-size: $md;
+      border-bottom: 1px solid $lightGray;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
     &-img {
       display: flex;
       flex-direction: column;
     }
 
     &-subtitle {
+      font-weight: 400;
       padding: 1rem 0;
       border-bottom: 1px solid $lightGray;
+      display: flex;
+      gap: .65rem;
+
+      &::before {
+        content: '=';
+        color: $mainColor;
+        font-size: $lg;
+      }
       p {
         margin: 0;
       }
@@ -27,21 +44,29 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: .75rem;
       background-color: $lightGray;
       border-radius: 4px;
 
       &--number {
         display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: .5rem .9rem .3rem .9rem;
+        background-color: $black;
+        border-radius: 4px;
 
         span {
           font-family: $altFont;
           color: $white;
-          padding: .5rem .7rem;
-          background-color: $black;
-          border-radius: 4px;
           font-size: $xl;
         }
+      }
+
+      &--div {
+        height: 1.9rem;
+        width: 1px;
+        background-color: $darkestGray;
       }
 
       span {
