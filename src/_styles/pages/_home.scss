@@ -1,3 +1,55 @@
 .home {
-    
+  &__section {
+    &-img {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-subtitle {
+      padding: 1rem 0;
+      border-bottom: 1px solid $lightGray;
+      p {
+        margin: 0;
+      }
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+
+    &-banner {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background-color: $lightGray;
+      border-radius: 4px;
+
+      &--number {
+        display: flex;
+
+        span {
+          font-family: $altFont;
+          color: $white;
+          padding: .5rem .7rem;
+          background-color: $black;
+          border-radius: 4px;
+          font-size: $xl;
+        }
+      }
+
+      span {
+        font-family: $altFont;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+  }
 }

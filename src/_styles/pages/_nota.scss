@@ -74,10 +74,8 @@
 
   &__main {
     &-legend {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: .5rem;
+      border-bottom: 1px solid $lightGray;
+      padding: .25rem 0 .5rem 0;
 
       &--title {
         margin: 0;
@@ -86,7 +84,9 @@
       }
 
       span {
+        margin-right: .25rem;
         font-size: $xs;
+        padding-bottom: .25rem;
       }
     }
 
@@ -133,10 +133,6 @@
 
     img {
       height: auto;
-    }
-
-    hr {
-      margin-bottom: 1.5rem;
     }
   }
 }
